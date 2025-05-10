@@ -1,3 +1,33 @@
-.header {
-  max-height: 10%;
+header {
+  display: flex;
+  flex-direction: column; /* Stack the logo and navigation vertically */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+}
+
+.logo {
+  max-height: 150px; /* Restrict the logo to a maximum height */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Add spacing between the logo and the navigation */
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%; /* Make the navigation take up the full width */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  margin: 0 10px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  text-align: center;
 }

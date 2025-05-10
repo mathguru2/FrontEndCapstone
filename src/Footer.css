@@ -1,0 +1,26 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.footer-column {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+.logo-small img {
+  max-width: 100px;
+  height: auto;
+}
+
+.copywriting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Ensures it matches the height of the other column */
+}

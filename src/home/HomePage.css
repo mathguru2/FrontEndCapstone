@@ -1,0 +1,42 @@
+main {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.promo-banner {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.content-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.column img {
+  width: 100%;
+  max-width: 200px; /* Set a maximum width */
+  height: 200px; /* Force the height to match the width for a square */
+  object-fit: cover; /* Ensure the image scales and crops properly */
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.column article {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+}

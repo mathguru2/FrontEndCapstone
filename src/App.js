@@ -1,27 +1,21 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./Header";
-import Main from "./Main";
+import HomePage from "./home/HomePage";
+import Reserve from "./booking/Reserve";
+import Footer from "./Footer";
 
 function App() {
   return (
-    <>
-      <head>
-        <meta
-          name="description"
-          content="The littlest and lemonest restaraunt there ever was!"
-        />
-        <meta name="og:title" content="Little Lemon" />
-        <meta name="og:description" content="The little lemon app" />
-        <meta name="og:image" content="" />
-        {/*TODO: add image */}
-      </head>
-      <body>
-        <Header />
-        <Main />
-      </body>
-      <footer></footer>
-    </>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/reserve" element={<Reserve />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
