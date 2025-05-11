@@ -1,21 +1,21 @@
 header {
   display: flex;
-  flex-direction: column; /* Stack the logo and navigation vertically */
+  flex-direction: column;
   align-items: center;
   padding: 10px 20px;
   background-color: #f4f4f4;
 }
 
 .logo {
-  max-height: 150px; /* Restrict the logo to a maximum height */
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 20px; /* Add spacing between the logo and the navigation */
+  max-height: 150px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .nav-list {
   display: flex;
   justify-content: space-evenly;
-  width: 100%; /* Make the navigation take up the full width */
+  width: 100%;
   list-style: none;
   padding: 0;
   margin: 0;
